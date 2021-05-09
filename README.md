@@ -30,7 +30,7 @@ A traves del comando
 docker stats
 ```
 
-Podemos monitorear lso recursos de los contenedores que estan ejecucion. 
+Podemos monitorear los recursos de los contenedores que estan ejecucion. 
 
 ```
 docker run -d -p 8080:80 -m 256m --cpus=1.5 --cpuset-cpus=1 --memory-reservation=128m --name web devops-test:v1
@@ -55,7 +55,7 @@ Y para correr el contenedor haciendo uso de esta red debemos ejecutar en contene
 ```
 docker run -d -p 8080:80 -m 256m --cpus=1.5 --cpuset-cpus=1 --memory-reservation=128m --network cargamos --name web devops-test:v1
 ```
-
+Para visualizar la aplicacion es necesario acceder a [localhost:8080](localhost:8080)
 
 
 
